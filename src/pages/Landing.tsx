@@ -94,7 +94,7 @@ const Landing = () => {
               <p className="font-bold text-lg">
                 Total Earnings :{" "}
                 <span className="text-[#026937]">
-                  {accountTokenBalance ? formatEther(accountTokenBalance) : 0} cUSD
+                  {accountTokenBalance ? Number(formatEther(accountTokenBalance)).toFixed(4) : 0} cUSD
                 </span>
               </p>
               <div className="mt-4 space-y-2">
